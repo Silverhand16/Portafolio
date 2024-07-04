@@ -14,74 +14,74 @@
     <!-- SECCION ANÁLISIS DE DATOS DE PRODUCTOS EN AMAZON -->
     <section id="analisis-productos" class="proyecto">
         <div class="contenido-seccion">
-            <h2>Visualizacion de Datos de Productos en Amazon</h2>
-            <h3>Descripción del Proyecto</h3>
-            <p>Este proyecto se centra en la recopilación, limpieza, análisis y visualización de datos de productos disponibles en Amazon. Utilizando múltiples archivos CSV que contienen información diversa sobre productos de diferentes categorías y subcategorías, el objetivo principal es extraer insights valiosos sobre los precios y las calificaciones de los productos.</p>
-            
-            <h3>Objetivos del Proyecto</h3>
-            <ul>
-                <li><strong>Consolidar Datos:</strong> Combinar múltiples archivos CSV en un único DataFrame para facilitar el análisis.</li>
-                <li><strong>Limpieza de Datos:</strong> Asegurar que los datos sean consistentes y adecuados para el análisis, incluyendo la conversión de precios a formatos numéricos.</li>
-                <li><strong>Análisis Exploratorio:</strong> Explorar las relaciones entre diferentes variables, como precio y calificación, y analizar el rango de precios por subcategoría.</li>
-                <li><strong>Visualización de Datos:</strong> Crear visualizaciones efectivas para comunicar los hallazgos de manera clara y concisa.</li>
+            <h2>Viewing Product Data on Amazon</h2>
+ <h3>Project Description</h3>
+ <p>This project focuses on the collection, cleaning, analysis and visualization of product data available on Amazon. Using multiple CSV files containing various information about products from different categories and subcategories, the main objective is to extract valuable insights about product prices and ratings.</p>
+
+ <h3>Project Objectives</h3>
+ <ul>
+ <li><strong>Consolidate Data:</strong> Combine multiple CSV files into a single DataFrame for easy analysis.</li>
+ <li><strong>Data Cleansing:</strong> Ensure that data is consistent and suitable for analysis, including converting prices to numerical formats.</li>
+ <li><strong>Exploratory Analysis:</strong> Explore the relationships between different variables, such as price and rating, and analyze the price range by subcategory.</li>
+ <li><strong>Data Visualization:</strong> Create effective visualizations to communicate findings clearly and concisely.</li>
+ </ul>
+
+ <h3>Tools Used</h3>
+ <ul>
+ <li>Python: Programming language used for data manipulation and analysis.</li>
+ <li>pandas: Python library for managing and analyzing data structures, particularly useful for manipulating tabular data.</li>
+ <li>numpy: Python library for numerical operations and array manipulation.</li>
+ <li>matplotlib: Python library for creating static, animated and interactive graphs.</li>
+ <li>seaborn: Python library based on matplotlib to improve the aesthetics and functionality of visualizations.</li>
             </ul>
 
-            <h3>Herramientas Utilizadas</h3>
-            <ul>
-                <li>Python: Lenguaje de programación utilizado para la manipulación y análisis de datos.</li>
-                <li>pandas: Biblioteca de Python para el manejo y análisis de estructuras de datos, particularmente útil para la manipulación de datos tabulares.</li>
-                <li>numpy: Biblioteca de Python para operaciones numéricas y manipulación de arrays.</li>
-                <li>matplotlib: Biblioteca de Python para la creación de gráficos estáticos, animados e interactivos.</li>
-                <li>seaborn: Biblioteca de Python basada en matplotlib para mejorar la estética y funcionalidad de las visualizaciones.</li>
-            </ul>
-
-            <h3>Proceso del Proyecto</h3>
-            <ol>
-                <li><strong>Carga y Combinación de Datos:</strong>
-                    <ul>
-                        <li>Los datos se cargaron desde múltiples archivos CSV que representan diferentes categorías de productos en Amazon.</li>
-                        <li>Cada archivo CSV se leyó en un DataFrame de pandas y se almacenó en un diccionario para una fácil manipulación.</li>
-                        <li>Se combinó toda la información en un único DataFrame consolidado.</li>
+            <h3>Project Process</h3>
+ <ol>
+ <li><strong>Data Loading and Combining:</strong>
+ <ul>
+ <li>Data was loaded from multiple CSV files representing different product categories on Amazon.</li>
+ <li>Each CSV file was read into a pandas DataFrame and stored in a dictionary for easy manipulation.</li>
+ <li>All information was combined into a single consolidated DataFrame.</li>
+ </ul>
+ </li>
+ <li><strong>Data Cleaning:</strong>
+ <ul>
+ <li>Conversion of prices from string format (such as "₹32,999") to integers was carried out to facilitate numerical analysis.</li>
+ <li>Renamed price columns and removed rows with missing values ​​in critical columns.</li>
+ <li>Added a <code>category</code> column based on the file name to identify the category of each product.</li>
                     </ul>
                 </li>
-                <li><strong>Limpieza de Datos:</strong>
+                <li><strong>Exploratory Analysis:</strong>
                     <ul>
-                        <li>Se realizó la conversión de los precios de formato string (como "₹32,999") a enteros para facilitar los análisis numéricos.</li>
-                        <li>Se renombraron las columnas de precio y se eliminaron filas con valores faltantes en las columnas críticas.</li>
-                        <li>Se añadió una columna <code>category</code> basada en el nombre del archivo para identificar la categoría de cada producto.</li>
+                    <li>The existence of a correlation between price and product rating was investigated using correlation coefficients.</li>
+                    <li>The price range was analyzed based on the subcategories to identify the subcategories with the most expensive and cheapest products.</li>
+                    <li>The average price of air conditioners was calculated and the distribution of prices was visualized.</li>
                     </ul>
-                </li>
-                <li><strong>Análisis Exploratorio:</strong>
+                    </li>
+                    <li><strong>Data Visualization:</strong>
                     <ul>
-                        <li>Se investigó la existencia de una correlación entre el precio y la calificación de los productos utilizando coeficientes de correlación.</li>
-                        <li>Se analizó el rango de precios en función de las subcategorías para identificar las subcategorías con productos más caros y más baratos.</li>
-                        <li>Se calculó el precio promedio de los aires acondicionados y se visualizó la distribución de los precios.</li>
-                    </ul>
-                </li>
-                <li><strong>Visualización de Datos:</strong>
-                    <ul>
-                        <li>Se creó un gráfico de barras apiladas para mostrar los rangos de precios (mínimo y máximo) por subcategoría.</li>
-                        <li>Las etiquetas de las subcategorías se ajustaron para asegurar una visualización clara y legible.</li>
-                        <li>Se generó un histograma para visualizar la distribución de precios de los aires acondicionados, incluyendo una línea de densidad para una mejor comprensión de la distribución.</li>
+                    <li>A stacked bar chart was created to show price ranges (minimum and maximum) by subcategory.</li>
+                    <li>Subcategory labels have been adjusted to ensure clear and legible display.</li>
+                    <li>A histogram was generated to visualize the price distribution of air conditioners, including a density line for a better understanding of the distribution.</li>
                     </ul>
                 </li>
             </ol>
 
-            <h3>Resultados y Hallazgos</h3>
-            <ul>
-                <li><strong>Correlación entre Precio y Calificación:</strong> Se encontró que no existe una correlación significativa entre el precio y la calificación de los productos, lo que indica que el precio no necesariamente influye en cómo los usuarios valoran los productos.</li>
-                <li><strong>Rango de Precios por Subcategoría:</strong> Las subcategorías con los productos más caros y más baratos se identificaron y visualizaron. Esto puede ayudar a los vendedores y compradores a entender mejor el mercado de Amazon.</li>
-                <li><strong>Precio Promedio de Aires Acondicionados:</strong> Se calculó que el precio promedio de los aires acondicionados es una métrica útil para comparar y analizar el mercado de estos productos en Amazon.</li>
-                <li><strong>Distribución de Precios de Aires Acondicionados:</strong> La visualización de la distribución de precios mostró cómo se distribuyen los precios de los aires acondicionados, proporcionando una visión clara de las tendencias y variaciones en el mercado.</li>
-            </ul>
+            <h3>Results and Findings</h3>
+ <ul>
+ <li><strong>Correlation between Price and Rating:</strong> It was found that there is no significant correlation between price and rating of products, indicating that price does not necessarily influence how users rate products .</li>
+ <li><strong>Price Range by Subcategory:</strong> The subcategories with the most expensive and cheapest products were identified and displayed. This can help sellers and buyers better understand the Amazon marketplace.</li>
+ <li><strong>Average Price of Air Conditioners:</strong> It was calculated that the average price of air conditioners is a useful metric to compare and analyze the market for these products on Amazon.</li>
+ <li><strong>Air Conditioner Price Distribution:</strong> The price distribution visualization showed how air conditioner prices are distributed, providing a clear view of trends and variations in the market.</strong> li>
+ </ul>
 
-            <h3>Conclusión</h3>
-            <p>Este proyecto de análisis de datos de productos en Amazon proporciona una visión detallada del mercado en términos de precios y calificaciones. La consolidación y limpieza de datos permiten realizar análisis exploratorios precisos, y las visualizaciones ayudan a comunicar los hallazgos de manera efectiva. Estos insights pueden ser útiles tanto para vendedores como para compradores en Amazon.</p>
-            <p>Este proyecto destaca habilidades clave en manipulación y análisis de datos utilizando Python, así como en la creación de visualizaciones informativas y claras.</p>
+ <h3>Conclusion</h3>
+ <p>This Amazon product data analysis project provides a detailed view of the market in terms of prices and ratings. Consolidating and cleaning data enables precise exploratory analysis, and visualizations help communicate findings effectively. These insights can be useful for both sellers and buyers on Amazon.</p>
+ <p>This project highlights key skills in data manipulation and analysis using Python, as well as creating clear, informative visualizations.</p>
             
             <!-- Botón para GitHub -->
-            <a href="https://github.com/Silverhand16/Visualizacion-de-datos.git" class="boton-github">Ver en GitHub <i class="fab fa-github"></i></a>
-            <a href="index.html" class="boton-inicio">Volver al Inicio <i class="fa fa-home"></i></a>
+            <a href="https://github.com/Silverhand16/Visualizacion-de-datos.git" class="boton-github">View on GitHub <i class="fab fa-github"></i></a>
+            <a href="index.html" class="boton-inicio">Back to top <i class="fa fa-home"></i></a>
         </div>
     </section>
 

@@ -13,10 +13,10 @@
     <!-- SECCION PROYECTO -->
     <section id="proyecto" class="proyecto">
         <div class="contenido-seccion">
-            <h2>Limpieza y Visualización de un Dataset de Netflix</h2>
-            <h3>Descripción del Proyecto</h3>
-            <p>Este proyecto se centra en la limpieza, transformación y visualización de un conjunto de datos de Netflix. El objetivo principal es preparar los datos para un análisis más profundo, asegurando que estén limpios, completos y en un formato adecuado para su análisis. Además, se realizan algunas visualizaciones exploratorias para obtener una comprensión inicial de las características de los datos.</p>
-            <h3>Herramientas Utilizadas</h3>
+            <h2>Cleaning and Viewing a Netflix Dataset</h2>
+            <h3>Project Description</h3>
+            <p>This project focuses on cleaning, transforming and visualizing a Netflix data set. The main goal is to prepare the data for further analysis, ensuring that it is clean, complete and in a format suitable for analysis. Additionally, some exploratory visualizations are performed to gain an initial understanding of the characteristics of the data.</p>
+            <h3>Tools Used</h3>
             <ul>
                 <li>Python</li>
                 <li>Pandas</li>
@@ -24,75 +24,75 @@
                 <li>Seaborn</li>
                 <li>Jupyter Notebook</li>
             </ul>
-            <h3>Pasos del Proyecto</h3>
+            <h3>Project Steps</h3>
             <ol>
-                <li>Carga del Dataset:
-                    <ul>
-                        <li>El archivo CSV netflix_titles.csv se carga utilizando Pandas, una biblioteca de análisis de datos en Python.</li>
+            <li>Dataset loading:
+            <ul>
+            <li>The netflix_titles.csv CSV file is loaded using Pandas, a data analysis library in Python.</li>
+            </ul>
+            </li>
+            <li>Identification and Handling of Null Values:
+            <ul>
+            <li>Null values ​​in the dataset are identified using the Pandas isnull() method.</li>
+            <li>Rows containing null values ​​are removed to ensure that only complete data is worked with.</li>
+            </ul>
+            </li>
+            <li>Handling Incomplete Values:
+            <ul>
+                <li>Null (incomplete) values ​​are counted for each column in the dataset.</li>
+                <li>Null values ​​in numeric columns are replaced with the average of those columns using Pandas' fillna() method.</li>
+                </ul>
+                </li>
+                <li>Elimination of Unnecessary Columns:
+                <ul>
+                <li>All columns of the dataset are reviewed to identify those that do not provide relevant information to the analysis.</li>
+                <li>Columns identified as unnecessary are removed.</li>
+                </ul>
+                </li>
+                <li>Data Type Conversion:
+                <ul>
+                <li>The data type of the release_year column is verified.</li>
+                <li>The release_year column is converted to an integer (int) type to ensure consistent formatting and facilitate subsequent analysis.</li>
+                </ul>
+                </li>
+                <li>Column Transformation:
+                <ul>
+                <li>The listed_in column contains multiple values ​​separated by commas.</li>
+                <li>A new column first_listed_in is created containing only the first listed_in value to simplify category analysis.</li>
+                </ul>
+                </li>
+                </ol>
+                <h3>Data Exploration and Visualization</h3>
+                <p>To gain an initial understanding of the data, the following visualizations were performed using Matplotlib and Seaborn:</p>
+                <ol>
+                <li>Histogram of 'release_year':
+                <ul>
+                <li>A histogram was generated to visualize the distribution of the release years of Netflix titles in the dataset.</li>
+                <li>This helps identify patterns and trends in release frequency over time.</li>
+                </ul>
+                </li>
+                <li>Bar chart for 'first_listed_in':
+                <ul>
+                <li>A bar chart was created to show the frequency of the top categories in the first_listed_in column.</li>
+                <li>This visualization allows you to understand what types of content are most common in the dataset.</li>
                     </ul>
                 </li>
-                <li>Identificación y Manejo de Valores Nulos:
+                <li>Correlation Heat Map:
                     <ul>
-                        <li>Se identifican los valores nulos en el dataset utilizando el método isnull() de Pandas.</li>
-                        <li>Se eliminan las filas que contienen valores nulos para asegurarse de que solo se trabajen con datos completos.</li>
+                    <li>A heat map was generated to visualize the correlations between the numerical variables of the dataset.</li>
+                    <li>The heat map helps identify strong or weak relationships between different variables, which can be useful for more advanced analyses.</li>
                     </ul>
-                </li>
-                <li>Manejo de Valores Incompletos:
-                    <ul>
-                        <li>Se cuentan los valores nulos (incompletos) para cada columna del dataset.</li>
-                        <li>Se reemplazan los valores nulos en las columnas numéricas con la media de dichas columnas utilizando el método fillna() de Pandas.</li>
-                    </ul>
-                </li>
-                <li>Eliminación de Columnas Innecesarias:
-                    <ul>
-                        <li>Se revisan todas las columnas del dataset para identificar aquellas que no aportan información relevante al análisis.</li>
-                        <li>Se eliminan las columnas identificadas como innecesarias.</li>
-                    </ul>
-                </li>
-                <li>Conversión de Tipos de Datos:
-                    <ul>
-                        <li>Se verifica el tipo de dato de la columna release_year.</li>
-                        <li>Se convierte la columna release_year a tipo entero (int) para asegurar un formato consistente y facilitar el análisis posterior.</li>
-                    </ul>
-                </li>
-                <li>Transformación de Columnas:
-                    <ul>
-                        <li>La columna listed_in contiene múltiples valores separados por comas.</li>
-                        <li>Se crea una nueva columna first_listed_in que contiene solo el primer valor de listed_in para simplificar el análisis de categorías.</li>
-                    </ul>
-                </li>
-            </ol>
-            <h3>Exploración de Datos y Visualización</h3>
-            <p>Para obtener una comprensión inicial de los datos, se realizaron las siguientes visualizaciones utilizando Matplotlib y Seaborn:</p>
-            <ol>
-                <li>Histograma de 'release_year':
-                    <ul>
-                        <li>Se generó un histograma para visualizar la distribución de los años de lanzamiento de los títulos de Netflix en el dataset.</li>
-                        <li>Esto ayuda a identificar patrones y tendencias en la frecuencia de lanzamientos a lo largo del tiempo.</li>
-                    </ul>
-                </li>
-                <li>Gráfico de Barras para 'first_listed_in':
-                    <ul>
-                        <li>Se creó un gráfico de barras para mostrar la frecuencia de las categorías principales en la columna first_listed_in.</li>
-                        <li>Esta visualización permite entender qué tipos de contenido son más comunes en el dataset.</li>
-                    </ul>
-                </li>
-                <li>Mapa de Calor de Correlaciones:
-                    <ul>
-                        <li>Se generó un mapa de calor para visualizar las correlaciones entre las variables numéricas del dataset.</li>
-                        <li>El mapa de calor ayuda a identificar relaciones fuertes o débiles entre diferentes variables, lo cual puede ser útil para análisis más avanzados.</li>
-                    </ul>
-                </li>
-            </ol>
-            <h3>Guardado del Dataframe Limpio</h3>
-            <p>Finalmente, el dataframe limpio se guardó en un nuevo archivo CSV (Netflix_tittle_limpio) para futuros análisis y visualizaciones.</p>
-            <h3>Conclusión</h3>
-            <p>Este proyecto demuestra habilidades esenciales en la limpieza y transformación de datos, así como en la creación de visualizaciones exploratorias. La limpieza y preparación de datos son pasos críticos en cualquier proyecto de análisis de datos, ya que aseguran la calidad y fiabilidad de los análisis posteriores. Las visualizaciones iniciales proporcionan una comprensión rápida y efectiva de las características clave del dataset.</p>
+                    </li>
+                    </ol>
+                    <h3>Saving the Clean Dataframe</h3>
+                    <p>Finally, the clean dataframe was saved to a new CSV file (Netflix_tittle_clean) for future analysis and visualization.</p>
+                    <h3>Conclusion</h3>
+                    <p>This project demonstrates essential skills in data cleansing and transformation, as well as creating exploratory visualizations. Data cleaning and preparation are critical steps in any data analysis project, as they ensure the quality and reliability of subsequent analyses. Initial visualizations provide a quick and effective understanding of the key characteristics of the dataset.</p>
             
             <!-- Botón para GitHub -->
-            <a href="https://github.com/Silverhand16/Limpieza-de-datos.git" class="boton-github">Ver en GitHub <i class="fab fa-github"></i></a>
+            <a href="https://github.com/Silverhand16/Limpieza-de-datos.git" class="boton-github">View on GitHub <i class="fab fa-github"></i></a>
             <!-- Botón para volver al inicio -->
-            <a href="index.html" class="boton-inicio">Volver al Inicio <i class="fa fa-home"></i></a>
+            <a href="index.html" class="boton-inicio">Back to top <i class="fa fa-home"></i></a>
         </div>
     </section>
 

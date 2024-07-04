@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Portfolio</title>
+</head>
+<body>
+   
+    <!-- SECCION PROYECTO -->
+   <!-- SECCION ANÁLISIS DE DATOS DE LANZAMIENTOS ESPACIALES -->
+   <section id="analisis-lanzamientos" class="proyecto">
+    <div class="contenido-seccion">
+        <h2>Análisis de Datos de Lanzamientos Espaciales</h2>
+        <h3>Descripción del Proyecto</h3>
+        <p>El objetivo de este proyecto es analizar un conjunto de datos históricos de lanzamientos espaciales para responder preguntas clave sobre la frecuencia, costos y seguridad de las misiones espaciales. Este análisis ayuda a comprender las tendencias y patrones en la industria espacial, proporcionando información valiosa sobre cómo ha evolucionado a lo largo del tiempo. Utilizamos herramientas de análisis de datos como Python y las bibliotecas pandas y matplotlib para procesar y visualizar los datos.</p>
+        <h3>Preguntas de Guía</h3>
+        <ol>
+            <li>¿Qué organización lanzó más misiones espaciales en un año determinado?
+                <ul>
+                    <li>Identificar la organización con el mayor número de lanzamientos en un año específico ayuda a entender la competencia y la actividad en la industria espacial durante ese período.</li>
+                </ul>
+            </li>
+            <li>¿Cuántos lanzamientos se realizaron por año?
+                <ul>
+                    <li>Contar los lanzamientos por año nos permite ver la evolución de la actividad espacial, identificando años con mayor o menor actividad.</li>
+                </ul>
+            </li>
+            <li>¿Cómo ha variado el costo de una misión espacial a lo largo del tiempo?
+                <ul>
+                    <li>Analizar los costos de las misiones a lo largo del tiempo proporciona una visión sobre las tendencias económicas en la industria espacial, incluyendo posibles reducciones de costos debido a avances tecnológicos.</li>
+                </ul>
+            </li>
+            <li>¿Qué meses son los más populares para los lanzamientos?
+                <ul>
+                    <li>Identificar los meses con más lanzamientos puede revelar patrones estacionales o preferencias operativas en la planificación de misiones espaciales.</li>
+                </ul>
+            </li>
+            <li>¿Se han vuelto más seguras las misiones espaciales o las posibilidades de fracaso se han mantenido sin cambios?
+                <ul>
+                    <li>Evaluar la seguridad de las misiones espaciales a lo largo del tiempo nos ayuda a comprender si ha habido mejoras en la tecnología y procedimientos que han reducido los riesgos de fracaso.</li>
+                </ul>
+            </li>
+        </ol>
+        <h3>Herramientas Utilizadas</h3>
+        <ul>
+            <li>Python: Lenguaje de programación utilizado para la manipulación y análisis de datos.</li>
+            <li>pandas: Biblioteca de Python para el manejo y análisis de estructuras de datos, particularmente útil para la manipulación de datos tabulares.</li>
+            <li>matplotlib: Biblioteca de Python para la creación de gráficos estáticos, animados e interactivos, utilizada para visualizar los resultados del análisis de datos.</li>
+        </ul>
+        <h3>Pasos Realizados</h3>
+        <ol>
+            <li>Carga y Exploración de los Datos
+                <ul>
+                    <li>Carga del archivo CSV: Cargamos el archivo CSV que contiene los datos de lanzamientos espaciales utilizando pandas.</li>
+                    <li>Exploración inicial: Exploramos las primeras filas del dataset para entender su estructura y contenido, identificando las columnas relevantes para el análisis.</li>
+                </ul>
+            </li>
+            <li>Limpieza y Preparación de los Datos
+                <ul>
+                    <li>Eliminación de columnas innecesarias: Eliminamos las columnas Unnamed: 0.1 y Unnamed: 0, que son índices innecesarios para el análisis.</li>
+                    <li>Conversión de la columna de fechas: Convertimos la columna Date a un formato datetime para facilitar el análisis temporal.</li>
+                    <li>Conversión de la columna de precios: Convertimos la columna Price a un formato numérico para permitir cálculos de costos.</li>
+                    <li>Identificación de valores nulos: Identificamos y contamos los valores nulos en el dataset y mostramos las filas afectadas para decidir cómo manejarlas en el análisis posterior.</li>
+                </ul>
+            </li>
+            <li>Análisis de Datos
+                <ul>
+                    <li>Organización con más misiones en un año determinado: Analizamos y graficamos qué organización lanzó más misiones en un año específico, proporcionando una visión de la competencia en la industria espacial.</li>
+                    <li>Número de lanzamientos por año: Contamos y visualizamos el número de lanzamientos realizados cada año para entender la evolución de la actividad espacial.</li>
+                    <li>Variación del costo de una misión espacial a lo largo del tiempo: Calculamos el costo promedio de las misiones a lo largo del tiempo y lo graficamos para observar tendencias y variaciones económicas.</li>
+                    <li>Meses más populares para los lanzamientos: Identificamos y graficamos los meses con mayor número de lanzamientos, revelando posibles patrones estacionales en la planificación de misiones.</li>
+                    <li>Seguridad de las misiones espaciales: Evaluamos y visualizamos la proporción de misiones exitosas y fallidas a lo largo del tiempo para entender las mejoras en la seguridad de las misiones espaciales.</li>
+                </ul>
+            </li>
+        </ol>
+        <h3>Resultados y Visualizaciones</h3>
+        <ol>
+            <li>Organización con más misiones en un año determinado:
+                <ul>
+                    <li>Se creó un gráfico de barras que muestra las organizaciones con más lanzamientos en un año específico, destacando la organización líder en términos de actividad.</li>
+                </ul>
+            </li>
+            <li>Número de lanzamientos por año:
+                <ul>
+                    <li>Se generó un gráfico de barras que visualiza la cantidad de lanzamientos espaciales realizados cada año, permitiendo identificar tendencias a largo plazo en la actividad espacial.</li>
+                </ul>
+            </li>
+            <li>Variación del costo de una misión espacial a lo largo del tiempo:
+                <ul>
+                    <li>Se produjo un gráfico de línea que muestra cómo ha variado el costo promedio de una misión espacial a lo largo de los años, proporcionando una visión de las tendencias económicas en la industria espacial.</li>
+                </ul>
+            </li>
+            <li>Meses más populares para los lanzamientos:
+                <ul>
+                    <li>Se creó un gráfico de barras que identifica los meses con mayor número de lanzamientos espaciales, revelando posibles patrones estacionales en la planificación de misiones.</li>
+                </ul>
+            </li>
+            <li>Seguridad de las misiones espaciales:
+                <ul>
+                    <li>Se realizó un gráfico de barras apiladas para evaluar la proporción de misiones exitosas y fallidas a lo largo del tiempo, mostrando las mejoras en la seguridad de las misiones espaciales.</li>
+                </ul>
+            </li>
+        </ol>
+        <h3>Conclusión</h3>
+        <p>Este proyecto ha permitido obtener una visión detallada de los lanzamientos espaciales, desde la frecuencia y costos hasta la seguridad de las misiones. Utilizando herramientas de análisis de datos y visualización, hemos podido procesar grandes volúmenes de información y generar visualizaciones claras y concisas. Estos análisis son fundamentales para comprender mejor la evolución y tendencias en la industria espacial, ofreciendo información valiosa para investigadores, empresas y entusiastas del espacio.</p>
+        
+        <!-- Botón para GitHub -->
+        <a href="https://github.com/Silverhand16/Analisis-de-dataset.git" class="boton-github">Ver en GitHub <i class="fab fa-github"></i></a>
+        <a href="index.html" class="boton-inicio">Volver al Inicio <i class="fa fa-home"></i></a>
+    </div>
+</section>
+
+</body>
+</html>
